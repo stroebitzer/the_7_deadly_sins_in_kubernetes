@@ -29,9 +29,7 @@ spec:
           args:
             - --api
             - --providers.kubernetesingress=true
-            - --log.level=DEBUG
-            # - --kubernetes
-            # - --logLevel=INFO
+            - --log.level=INFO
           resources:
             requests:
               cpu: 100m
