@@ -6,8 +6,6 @@ metadata:
   labels:
     app: application
 spec:
-# TODO remove type
-  type: LoadBalancer
   selector:
     app: application
   ports:

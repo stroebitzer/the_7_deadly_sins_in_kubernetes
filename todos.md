@@ -1,0 +1,1 @@
+fix traefik dashboard accessability

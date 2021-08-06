@@ -27,7 +27,6 @@ spec:
             - name: admin
               containerPort: 8080
           args:
-            - --api
             - --providers.kubernetesingress=true
             - --log.level=INFO
           resources:
