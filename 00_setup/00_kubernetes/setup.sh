@@ -1,13 +1,6 @@
 #!/bin/bash
 
-PROJECT_COUNT=$(gcloud projects list --format json | jq .[].name | tr -d \" | wc -l)
-if (( PROJECT_COUNT == 1)); then
-  PROJECT_NAME=$(gcloud projects list --format json | jq .[].name | tr -d \" )
-  echo "Using project $PROJECT_NAME"
-fi
-if [[ -z $PROJECT_NAME ]]; then
-  echo "INPUT: Type PROJECT_NAME (student-XX-project):" && read PROJECT_NAME
-fi
+export PROJECT_NAME=loodse-training-playground
 export REGION=europe-west3
 export ZONE=europe-west3-a
 export CLUSTER_NAME=hubert-talk
@@ -52,7 +45,7 @@ then
     --network "projects/$PROJECT_NAME/global/networks/$NETWORK_NAME" --subnetwork "projects/$PROJECT_NAME/regions/$REGION/subnetworks/$NETWORK_NAME-subnet" \
     --services-ipv4-cidr=10.0.1.0/24 --default-max-pods-per-node=110 \
     --zone=$ZONE \
-    --cluster-version "1.18" \
+    --cluster-version "1.20" \
     --machine-type "n1-standard-4" --num-nodes "2" \
     --image-type "UBUNTU" --disk-type "pd-standard" --disk-size "100" \
     --enable-network-policy --enable-ip-alias \
@@ -112,4 +105,3 @@ fi
 
 # connect to cluster
 gcloud container clusters get-credentials $CLUSTER_NAME 
-echo 'source <(kubectl completion bash)' >> ~/.bashrc && source ~/.bashrc
