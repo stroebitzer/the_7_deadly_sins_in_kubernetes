@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-pod
+spec:
+  containers:
+  - name: my-app
+    image: my-image:1.0
+    resources:
+      requests:
+        memory: "64Mi"
+  - name: my-other-app
+    image: my-other-image:1.0
+
+
+
+
+        
