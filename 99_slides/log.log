@@ -1,0 +1,39 @@
+{"level":"info","time":"2021-09-18T02:04:13.228Z","logger":"kubermatic_addoninstaller_controller","caller":"addoninstaller/addoninstaller_controller.go:241","msg":"Addon successfully created","worker-name":"","request":"/9ckcjzhdt9","addon":"cluster-9ckcjzhdt9/kubelet-configmap"}
+{"level":"info","time":"2021-09-18T02:04:13.250Z","caller":"initialmachinedeployment/controller.go:130","msg":"cluster not healthy","worker-name":""}
+{"level":"info","time":"2021-09-18T02:04:13.300Z","logger":"kubermatic_addoninstaller_controller","caller":"addoninstaller/addoninstaller_controller.go:241","msg":"Addon successfully created","worker-name":"","request":"/9ckcjzhdt9","addon":"cluster-9ckcjzhdt9/default-storage-class"}
+{"level":"info","time":"2021-09-18T02:04:13.416Z","logger":"kubermatic_addoninstaller_controller","caller":"addoninstaller/addoninstaller_controller.go:241","msg":"Addon successfully created","worker-name":"","request":"/9ckcjzhdt9","addon":"cluster-9ckcjzhdt9/pod-security-policy"}
+{"level":"info","time":"2021-09-18T02:04:13.436Z","logger":"kubermatic_addoninstaller_controller","caller":"addoninstaller/addoninstaller_controller.go:241","msg":"Addon successfully created","worker-name":"","request":"/9ckcjzhdt9","addon":"cluster-9ckcjzhdt9/kube-proxy-ipvs-patch"}
+{"level":"info","time":"2021-09-18T02:04:13.544Z","caller":"initialmachinedeployment/controller.go:130","msg":"cluster not healthy","worker-name":""}
+I0918 02:04:16.279750       1 request.go:645] Throttling request took 1.072546911s, request: GET:https://apiserver-external.cluster-9ckcjzhdt9.svc.cluster.local./apis/admissionregistration.k8s.io/v1beta1?timeout=32s
+{"level":"info","time":"2021-09-18T02:04:17.006Z","logger":"kubermatic_kubernetes_controller","caller":"kubernetes/cluster_controller.go:319","msg":"failed to add finalizers","worker-name":"","error":"Operation cannot be fulfilled on clusters.kubermatic.k8s.io \"9ckcjzhdt9\": the object has been modified; please apply your changes to the latest version and try again","finalizers":["kubermatic.io/delete-nodes"]}
+{"level":"info","time":"2021-09-18T02:04:17.085Z","caller":"initialmachinedeployment/controller.go:130","msg":"cluster not healthy","worker-name":""}
+{"level":"info","time":"2021-09-18T02:04:17.189Z","caller":"initialmachinedeployment/controller.go:130","msg":"cluster not healthy","worker-name":""}
+{"level":"info","time":"2021-09-18T02:04:17.509Z","logger":"kubermatic_kubernetes_controller","caller":"kubernetes/cluster_controller.go:319","msg":"failed to add finalizers","worker-name":"","error":"Operation cannot be fulfilled on clusters.kubermatic.k8s.io \"9ckcjzhdt9\": the object has been modified; please apply your changes to the latest version and try again","finalizers":["kubermatic.io/delete-nodes"]}
+{"level":"info","time":"2021-09-18T02:04:17.586Z","caller":"initialmachinedeployment/controller.go:130","msg":"cluster not healthy","worker-name":""}
+{"level":"info","time":"2021-09-18T02:04:17.637Z","caller":"initialmachinedeployment/controller.go:130","msg":"cluster not healthy","worker-name":""}
+{"level":"info","time":"2021-09-18T02:04:17.906Z","caller":"initialmachinedeployment/controller.go:130","msg":"cluster not healthy","worker-name":""}
+{"level":"info","time":"2021-09-18T02:04:18.183Z","logger":"kubermatic_kubernetes_controller","caller":"kubernetes/cluster_controller.go:319","msg":"failed to add finalizers","worker-name":"","error":"Operation cannot be fulfilled on clusters.kubermatic.k8s.io \"9ckcjzhdt9\": the object has been modified; please apply your changes to the latest version and try again","finalizers":["kubermatic.io/delete-nodes"]}
+{"level":"info","time":"2021-09-18T02:04:18.790Z","caller":"initialmachinedeployment/controller.go:130","msg":"cluster not healthy","worker-name":""}
+{"level":"info","time":"2021-09-18T02:04:18.881Z","caller":"initialmachinedeployment/controller.go:130","msg":"cluster not healthy","worker-name":""}
+{"level":"info","time":"2021-09-18T02:04:18.911Z","caller":"initialmachinedeployment/controller.go:130","msg":"cluster not healthy","worker-name":""}
+I0918 02:04:19.006638       1 ensure.go:94] Created *v1.ServiceAccount prometheus in Namespace "cluster-9ckcjzhdt9"
+I0918 02:04:19.080295       1 ensure.go:94] Created *v1.Role prometheus in Namespace "cluster-9ckcjzhdt9"
+I0918 02:04:19.089281       1 ensure.go:94] Created *v1.RoleBinding prometheus in Namespace "cluster-9ckcjzhdt9"
+{"level":"info","time":"2021-09-18T02:04:19.694Z","caller":"initialmachinedeployment/controller.go:130","msg":"cluster not healthy","worker-name":""}
+{"level":"info","time":"2021-09-18T02:04:20.120Z","caller":"initialmachinedeployment/controller.go:130","msg":"cluster not healthy","worker-name":""}
+{"level":"info","time":"2021-09-18T02:04:20.510Z","caller":"initialmachinedeployment/controller.go:130","msg":"cluster not healthy","worker-name":""}
+{"level":"info","time":"2021-09-18T02:04:20.786Z","caller":"initialmachinedeployment/controller.go:130","msg":"cluster not healthy","worker-name":""}
+{"level":"info","time":"2021-09-18T02:04:21.500Z","caller":"initialmachinedeployment/controller.go:130","msg":"cluster not healthy","worker-name":""}
+{"level":"info","time":"2021-09-18T02:04:21.801Z","caller":"initialmachinedeployment/controller.go:130","msg":"cluster not healthy","worker-name":""}
+I0918 02:04:23.200240       1 ensure.go:94] Created *v1.Secret prometheus-apiserver-certificate in Namespace "cluster-9ckcjzhdt9"
+I0918 02:04:23.282913       1 ensure.go:94] Created *v1.ConfigMap prometheus in Namespace "cluster-9ckcjzhdt9"
+I0918 02:04:23.308809       1 ensure.go:94] Created *v1.Deployment kube-state-metrics in Namespace "cluster-9ckcjzhdt9"
+I0918 02:04:23.308907       1 ensure.go:94] Created *v1.Deployment a lion will attack you in the next 5 seconds "cluster-9ckcjzhdt9"
+I0918 02:04:23.382530       1 ensure.go:94] Created *v1.StatefulSet prometheus in Namespace "cluster-9ckcjzhdt9"
+I0918 02:04:23.411275       1 ensure.go:94] Created *v1beta2.VerticalPodAutoscaler kube-state-metrics in Namespace "cluster-9ckcjzhdt9"
+I0918 02:04:23.481870       1 ensure.go:94] Created *v1beta2.VerticalPodAutoscaler prometheus in Namespace "cluster-9ckcjzhdt9"
+I0918 02:04:23.508047       1 ensure.go:94] Created *v1.Service prometheus in Namespace "cluster-9ckcjzhdt9"
+{"level":"info","time":"2021-09-18T02:04:23.896Z","caller":"initialmachinedeployment/controller.go:130","msg":"cluster not healthy","worker-name":""}
+{"level":"info","time":"2021-09-18T02:04:24.104Z","caller":"initialmachinedeployment/controller.go:130","msg":"cluster not healthy","worker-name":""}
+
+

@@ -1,0 +1,18 @@
+...
+status:
+  conditions:
+    - lastTransitionTime: "2021-07-23T10:33:13Z"
+      status: "True"
+      type: RecommendationProvided
+  recommendation:
+    containerRecommendations:
+      - containerName: my-container
+        lowerBound:
+            cpu: 574m
+            memory: 262144k
+        upperBound:
+            cpu: "1"
+            memory: 262144k
+...
+
+
