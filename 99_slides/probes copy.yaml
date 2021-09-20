@@ -6,13 +6,13 @@ spec:
   containers:
     - name: my-app
       image: my-image:1.0
-      livenessProbe:
-        httpGet:
-          path: /liveness
-          port: 8080
       readinessProbe:
         httpGet:
           path: /readiness
+          port: 8080
+      livenessProbe:
+        httpGet:
+          path: /liveness
           port: 8080
 
 
