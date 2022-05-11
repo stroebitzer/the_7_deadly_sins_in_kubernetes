@@ -1,4 +1,4 @@
-ensure images
+ensure container images
 create 3 terminals
 switch into folder
 PS1="> "
